@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Chicle|IBM+Plex+Serif|Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Pacifico|Work+Sans" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main_div {
+            background: #dbdbdb;
+            min-height: 500px;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .top_div {
+            width: 100%;
+            height: 23%;
+            position: relative;
+            background-color: brown;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .top_div_text1 {
+            margin-left: 20px;
+            margin-top: 10px;
+            flex: 4;
+            z-index: 10;
+        }
+
+        .top_div_text2 {
+            font-family: cursive;
+            color: white;
+            font-size: 33px;
+            letter-spacing: 6px;
+            text-shadow: 0px 2px 6px grey;
+            margin-top: 45px;
+            flex: 2;
+            animation: anim;
+            animation-duration: 1s;
+        }
+
+        .burger_container {
+            width: 36px;
+            height: 34px;
+            position: relative;
+            margin-left: 95%;
+        }
+
+        .lower_div {
+            position: absolute;
+            width: 25vw;
+            height: 55vh;
+            left: 100%;
+            background: linear-gradient(45deg, blueviolet, #0ec37f);
+            transition-duration: 1s;
+        }
+
+        .inner_div {
+            margin-top: 35px;
+            width: 100%;
+            position: absolute;
+            padding-bottom: 10px;
+        }
+
+        .burger {
+            width: 100%;
+            margin-top: 25px;
+            position: relative;
+            font-family: cursive;
+            font-size: 25px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-left: 35px;
+        }
+
+        .a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .burger:hover {
+            background-color: floralwhite;
+            cursor: pointer;
+            margin-left: 10px;
+            color: mediumvioletred;
+        }
+
+        .small_burger {
+            width: 36px;
+            height: 7px;
+            border-radius: 3px;
+            position: absolute;
+            transition-duration: 0.4s;
+            background-color: blueviolet;
+        }
+
+        .small_burger:nth-child(1) {
+            top: 3px;
+        }
+
+        .small_burger:nth-child(2) {
+            top: 13px;
+        }
+
+        .small_burger:nth-child(3) {
+            top: 23.5px;
+        }
+
+        .cross_burger:nth-child(1) {
+            transform: rotate(45deg);
+            top: 45%;
+
+        }
+
+        .cross_burger:nth-child(2),
+        .cross_burger:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 45%;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-family: bitter;
+        }
+
+        .burger:hover {
+            background-color: floralwhite;
+            cursor: pointer;
+            margin-left: 10px;
+            transition-duration: 0.5s;
+        }
+
+        .burger a:hover {
+            color: darkgoldenrod;
+        }
+
+        .a {
+            padding: 0px 150px;
+            margin-bottom: 5vh;
+            height: 100px;
+            color: darkviolet;
+            transition-duration: 0.8s;
+            font-family: open sans;
+            background: #fff;
+
+        }
+
+        .q {
+            padding: 13px 120px;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 0px 10px 0px grey;
+            margin-bottom: 10px;
+            font-size: 30px;
+            margin-top: 20px;
+            background: #fff;
+            font-family: Cabin;
+        }
+
+        .image_style {
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .style_text {
+            color: rebeccapurple;
+            position: relative;
+            margin-top: 78px;
+            font-family: monospace;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class=" main_div ">
+        <div class="top_div ">
+            <div class="top_div_text1 "><img src="logo.png " /> </div>
+            <div class="top_div_text2 "> Examination Portal </div>
+        </div>
+        <div class="burger_container " onclick="func();">
+            <div class="small_burger "> </div>
+            <div class="small_burger "> </div>
+            <div class="small_burger "> </div>
+        </div>
+        <div class="lower_div ">
+            <div class="inner_div ">
+                <div class="burger "><a href="index.html "> About</a> </div><br/>
+                <div class="burger "> <a href="Log_in_project.php "> Log_in </a></div><br/>
+                <div class="burger "> <a href="Sign_up_project.html "> Sign_up</a> </div><br/>
+                <div class="burger "> <a href="admit_card.php "> Admit Card </a></div><br/>
+            </div>
+        </div>
+        <img class="image_style " src="mmmut.jpg " alt=" " />
+        <marquee>
+            <h1 class="style_text "> Welcome to Examination Portal of Madan Mohan Malaviya University if Technology.</h1>
+        </marquee>
+    </div>
+    <div class="question-answer">
+        <div class="q"> WELCOME TO M.M.M.U.T.</div>
+        <div class="a">Madan Mohan Malaviya University of Technology, Gorakhpur has been established in year 2013 by the Government of Uttar Pradesh in the form of a non-affiliating, teaching and research University after reconstituting the Madan Mohan Malaviya Engineering College, Gorakhpur which was established in 1962. Fifty batches of students have entered its portals to emerge after four years of rigorous education under the tutelage of some of the most venerable teachers, engineers ready to face the world and create new worlds.</div>
+
+        <div class="q"> VISION </div>
+        <div class="a">To facilitate and promote studies, research, technology incubation, product innovation and extension work in Science, Technology and Management Education, and also to achieve excellence in higher technical education.</div>
+
+        <div class="q"> MISSION </div>
+        <div class="a">The distinctive mission of the University is to serve society as a center of higher learning, providing long-term societal benefits through transmitting advanced knowledge, discovering new knowledge and functioning as an active working repository of organized knowledge; to take leadership role by providing need based programs in engineering and technology, applied sciences, management, humanities, architecture, pharmacy, retail and fashion design, mass-communication, agriculture and other employable courses in emerging areas</div>
+
+        <div class="q"> LOCATION and CAMPUS </div>
+        <div class="a">As you enter its gate, the first sight that greets you is the colour green. Malaviya's wooded acreages, a mere seven kilometers away from the holy city of Gorakhpur, provide the perfect element for the perfect engineer. The University is located on Gorakhpur - Deoria road, about 9 Kilometers from Gorakhpur Railway Station as well as from main Gorakhpur Roadways bus-station.</div>
+
+    </div>
+</body>
+<script>
+    function func() {
+        var y = document.querySelector(".cross_burger");
+        if (y == null) {
+            y = document.querySelectorAll(".small_burger");
+            for (var i = 0; i < y.length; i++) {
+                y[i].classList.add("cross_burger");
+            }
+            var p = document.querySelector(".lower_div");
+            p.style.left = "76%";
+        } else {
+            y = document.querySelectorAll(".small_burger");
+            for (var j = 0; j < y.length; j++) {
+                y[j].classList.remove("cross_burger");
+            }
+            var p = document.querySelector(".lower_div");
+            p.style.left = "100%";
+        }
+    }
+
+</script>

@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|PT+Sans|Roboto+Mono" rel="stylesheet">
+    <title>
+        Student Page
+    </title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .main_container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: inline-block;
+        }
+
+        .top_div {
+            width: 100%;
+            height: 23%;
+            position: relative;
+            background-color: brown;
+            display: flex;
+        }
+
+        .top_div_text1 {
+            margin-left: 20px;
+            margin-top: 10px;
+            flex: 4;
+            z-index: 10;
+        }
+
+        .text_style_1 {
+            font-family: inconsolata;
+            color: darkgreen;
+            text-shadow: 0px 2px 2px grey;
+            font-size: 30px;
+        }
+
+        .text_style_2 {
+            font-family: pt sans;
+            color: orangered;
+        }
+
+        .top_div_text2 {
+            font-family: cursive;
+            color: white;
+            font-size: 33px;
+            letter-spacing: 6px;
+            text-shadow: 0px 2px 6px grey;
+            margin-top: 45px;
+            flex: 2;
+            animation: anim;
+            animation-duration: 1s;
+        }
+
+        .side_slide {
+            width: 260px;
+            height: 100%;
+            background-color: #dbdbdb;
+            position: absolute;
+            color: red;
+            margin-left: 2px;
+            display: inline-block;
+        }
+
+        .table_result {
+            width: 900px;
+            margin-left: 280px;
+        }
+
+        .circle {
+            width: 130px;
+            height: 130px;
+            border-radius: 500px;
+            display: inline-block;
+            background-color: blueviolet;
+            margin-left: 1150px;
+            position: absolute;
+        }
+
+        .main_pic {
+            width: 130px;
+            height: 130px;
+            overflow: hidden;
+            border-radius: 500px;
+            position: absolute;
+        }
+
+        .short_header {
+            font-family: cursive;
+            font-size: 22px;
+            margin-left: 15px;
+            margin-top: 30px;
+            transition-duration: 0.5s;
+        }
+
+        .short_header:hover {
+            text-decoration: underline black;
+            cursor: pointer;
+        }
+
+        .item {
+            background-color: #ffdb4d;
+            height: 25px;
+        }
+
+        .altitem {
+            background-color: lightgoldenrodyellow;
+            height: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top_div">
+            <div class="top_div_text1"><img src="logo.png" /> </div>
+            <div class="top_div_text2"> Examination Portal </div>
+        </div>
+        <div class="container">
+            <div class="burger_container" onclick="func(); func1();">
+                <div class="small_burger"> </div>
+                <div class="small_burger"> </div>
+                <div class="small_burger"> </div>
+            </div>
+        </div>
+    </header>
+    <div class="main_container">
+        <div class="side_slide">
+            <h3 class="short_header"> Student Activities</h3>
+            <h3 class="short_header"> Previous Result </h3>
+            <h3 class="short_header"> Attendance </h3>
+        </div>
+        <div class="circle">
+            <img class="main_pic" src="shubh.jpg" alt="">
+        </div>
+        <div class="table_result">
+            <h2 class="text_style_1"> Shubham Srivastava</h2>
+            <h3 class="text_style_2"> 2016021086</h3>
+            <hr/>
+            <table width="100%" height="50%;">
+                <tr>
+                    <td align="center" colspan="2">
+                        <table width="100%" border="1" cellspacing="0" style="padding: 0px; border-width: 0.1px" class="Grid ">
+                            <tr class="Header" style="color: Black; font-weight: bold; font-family: Calibri;">
+                                <td style='text-align: center; width:10% '>Subjects</td>
+                                <td colspan='2' style='text-align: center; '>Quiz Test </td>
+                                <td colspan='2' style='text-align: center; '>Minor Test </td>
+                                <td colspan='2' style='text-align: center; '>Major Test </td>
+                            </tr>
+                            <tr class="Header" style="color: Black; font-weight: bold">
+                                <td style='width: 20%; text-align: left'>
+                                </td>
+                                <td style='text-align: center'>Max</td>
+                                <td style='text-align: center'>Obt.</td>
+                                <td style='text-align: center'>Max</td>
+                                <td style='text-align: center'>Obt.</td>
+                                <td style='text-align: center'>Max</td>
+                                <td style='text-align: center'>Obt.</td>
+                            </tr>
+                            <tr runat='server' class='Item'>
+                                <td style='width: 20%; text-align: left'> BAS-07 </td>
+                                <td style='text-align: center'> 15.0 </td>
+                                <td style='text-align: center'> 14.0 </td>
+                                <td style='text-align: center'> 15.0 </td>
+                                <td style='text-align: center'> Absent </td>
+                                <td style='text-align: center'> 15.0 </td>
+                                <td style='text-align: center'> 9.0 </td>
+                            </tr>
+                            <tr runat='server' class='AltItem'>
+                                <td style='width: 20%; text-align: left'> BAS-08 </td>
+                                <td style='text-align: center'> 10.0 </td>
+                                <td style='text-align: center'> 9.0 </td>
+                                <td style='text-align: center'> 10.0 </td>
+                                <td style='text-align: center'> 9.0 </td>
+                                <td style='text-align: center'> 10.0 </td>
+                                <td style='text-align: center'> 10.0 </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
