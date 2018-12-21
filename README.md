@@ -1,5 +1,5 @@
 # Student Portal
-This Site is my Academic Project in the B.Tech II Year, This site stores the information of student and the display the result
+This Site is my Academic Project in the B.Tech II Year, This site stores the information of student and the display the result. This is fully dynamic website in which php backend is used
 
 ## Features
 * Displaying the Result of the Students.
@@ -14,3 +14,14 @@ This Site is my Academic Project in the B.Tech II Year, This site stores the inf
 * Javascript
 * PHP
 * MySQL
+
+## Screenshots
+![Alt Text](./Screenshot/Screenshots/Capture1.PNG)
+
+![Alt Text](./Screenshot/Screenshots/Capture2.PNG)
+
+![Alt Text](./Screenshot/Screenshots/Capture3.PNG)
+
+![Alt Text](./Screenshot/Screenshots/Capture4.PNG)
+
+![Alt Text](./Screenshot/Screenshots/Capture5.PNG)
